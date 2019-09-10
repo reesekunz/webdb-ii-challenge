@@ -19,4 +19,8 @@
 
 9. Adjust knexfile.js to match your projects context (config settings)
 
-10. 
+10. knex migrate:make cars-table <!-- Creates a migrations folder and a file where you will be creating the cars table  -->
+
+11. Build out the created file inside migrations folder to create a cars table based on the specifications/field requirements given
+
+
