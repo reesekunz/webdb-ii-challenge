@@ -19,8 +19,13 @@
 
 9. Adjust knexfile.js to match your projects context (config settings)
 
-10. knex migrate:make cars-table <!-- Creates a migrations folder and a file where you will be creating the cars table  -->
+10. Create a data folder
 
-11. Build out the created file inside migrations folder to create a cars table based on the specifications/field requirements given
+11. Inside the data folder, add a db-config.js file. This file should be importing your knex file and then being exported as the database into carsRouter
 
+12. knex migrate:make cars-table <!-- Creates a migrations folder and a file where you will be creating the cars table  -->
 
+13. Build out the created file inside migrations folder to create a cars table based on the specifications/field requirements given
+
+14. knex migrate:latest <!-- runs all the latest migrations -->
+    In Postman you should now be returning an empty object on your GET request
