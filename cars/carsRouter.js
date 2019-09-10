@@ -18,7 +18,7 @@ router.get("/", (request, response) => {
 // GET to /api/cars/2
 
 router.get("/:id", (request, response) => {
-  const { id } = req.params;
+  const { id } = request.params;
 
   db("cars")
     .where({ id })
@@ -34,9 +34,9 @@ router.get("/:id", (request, response) => {
 // POST to /api/cars
 
 router.post("/", (request, response) => {
-  const carData = req.body;
+  const carsData = request.body;
   db("cars")
-    .insert(carData)
+    .insert(carsData)
     .then(ids => {
       db("cars")
         .where({ id: ids[0] })

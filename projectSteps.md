@@ -10,6 +10,13 @@
 
 5. Add index.js file, set up port, and import server.js
 
-6. Build out carsRouter with crud operations 
+6. Build out carsRouter with crud operations
 
-7. 
+7. npm add knex sqlite3 <!-- local install  -->
+   npm install -g knex <!-- global install -->
+
+8. knex init <!-- creates a knexfile.js (can delete production and staging objects) -->
+
+9. Adjust knexfile.js to match your projects context (config settings)
+
+10. 
