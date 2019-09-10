@@ -9,3 +9,7 @@
 4. Add server.js file and set up router to carsRouter file that needs to be created
 
 5. Add index.js file, set up port, and import server.js
+
+6. Build out carsRouter with crud operations 
+
+7. 
