@@ -28,4 +28,10 @@
 13. Build out the created file inside migrations folder to create a cars table based on the specifications/field requirements given
 
 14. knex migrate:latest <!-- runs all the latest migrations -->
-    In Postman you should now be returning an empty object on your GET request
+    In Postman you should now be returning an empty array on your GET request
+
+15. npx knex seed:make cars
+
+16. change seed file based on specifications defined in cars-table migrations. Manually inputting testing/starter data.
+
+17. npx knex seed:run
